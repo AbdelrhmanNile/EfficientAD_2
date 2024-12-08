@@ -14,21 +14,21 @@ Datasets:
 
 
 Model:
-  checkpoints: ckptSmall/best_teacher.pth
-  model_size: S
+  checkpoints: ckptMedium/best_teacher.pth
+  model_size: M
   batch_size: 1
   channel_size: 384
-  input_size: 256
+  input_size: 512
   iterations: 50000
   with_bn: false
   
 
 
 print_freq: 100
-category: bottle
+category: dronodatrunway
 normalized_ratio: 0.1
 combined_mst_ratio: 0.5
 combined_mae_ratio: 0.5
 checkpoints_type: auroc
 seed: 42
-ckpt_dir: ckptSmall
+ckpt_dir: ckptMedium
