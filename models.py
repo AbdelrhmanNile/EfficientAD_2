@@ -146,6 +146,7 @@ class PDN_M(nn.Module):
 
     def __init__(self, last_kernel_size=384,with_bn=False) -> None:
         super().__init__()
+        self.with_bn = with_bn
         # Layer Name Stride Kernel Size Number of Kernels Padding Activation
         # Conv-1 1×1 4×4 256 3 ReLU
         # AvgPool-1 2×2 2×2 256 1 -
