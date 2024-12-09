@@ -7,7 +7,7 @@ Datasets:
     root: /kaggle/input/
     type: MVTec
   imagenet:
-    root: data/ImageNet/
+    root: /kaggle/input/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/train/
     type: imagenet
     teacher_input: 512
     grayscale_ratio: 0.3
