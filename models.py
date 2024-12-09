@@ -140,6 +140,7 @@ class PDN_S(nn.Module):
         x = F.relu(x)
         x = self.conv4(x)
         x = self.bn4(x) if self.with_bn else x
+        x = F.interpolate(x, size=64, mode='bilinear')
         return x
     
 class PDN_M(nn.Module):
@@ -192,6 +193,7 @@ class PDN_M(nn.Module):
         x = F.relu(x)
         x = self.conv6(x)
         x = self.bn6(x) if self.with_bn else x
+        x = F.interpolate(x, size=64, mode='bilinear')
         return x
     
 class EncConv(nn.Module):
